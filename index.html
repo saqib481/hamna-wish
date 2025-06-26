@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Hamna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: 
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg'),
+        url('https://i.ibb.co/fVnPtJcP/Whats-App-Image-2024-03-31-at-12-16-52-531c6d83.jpg');
+      background-repeat: no-repeat;
+      background-position: top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right;
+      background-size: 33% auto, 33% auto, 33% auto, 33% auto, 33% auto, 33% auto, 33% auto, 33% auto, 33% auto;
+      font-family: 'Great Vibes', cursive;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      border: 10px solid;
+      border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    }
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 40px;
+      width: 95%;
+      max-width: 700px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: black;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 25px;
+      animation: pulse 1s ease-in-out infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.1); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      font-size: 2rem;
+      animation: float 6s infinite ease-in;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+    .balloon:nth-of-type(1) { left: 10%; animation-delay: 0s; }
+    .balloon:nth-of-type(2) { left: 25%; animation-delay: 1s; }
+    .balloon:nth-of-type(3) { left: 45%; animation-delay: 2s; }
+    .balloon:nth-of-type(4) { left: 65%; animation-delay: 3s; }
+    .balloon:nth-of-type(5) { left: 85%; animation-delay: 4s; }
+
+    .firework {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: yellow;
+      border-radius: 50%;
+      box-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red;
+      animation: explode 0.8s ease-out infinite alternate;
+    }
+    @keyframes explode {
+      0% { transform: scale(0.5); opacity: 1; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+
+    .firework:nth-of-type(6) { top: 10%; left: 10%; animation-delay: 0s; }
+    .firework:nth-of-type(7) { top: 20%; left: 30%; animation-delay: 0.1s; }
+    .firework:nth-of-type(8) { top: 30%; left: 50%; animation-delay: 0.2s; }
+    .firework:nth-of-type(9) { top: 40%; left: 70%; animation-delay: 0.3s; }
+    .firework:nth-of-type(10) { top: 50%; left: 90%; animation-delay: 0.4s; }
+    .firework:nth-of-type(11) { top: 60%; left: 20%; animation-delay: 0.5s; }
+    .firework:nth-of-type(12) { top: 70%; left: 40%; animation-delay: 0.6s; }
+    .firework:nth-of-type(13) { top: 80%; left: 60%; animation-delay: 0.7s; }
+    .firework:nth-of-type(14) { top: 90%; left: 80%; animation-delay: 0.8s; }
+
+    @media (max-width: 767px) {
+      .message {
+        font-size: 2rem;
+        max-width: 90%;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    🎉 Happy Birthday Hamna ❤️
+  </div>
+
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+  <div class="balloon">🎈</div>
+
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+</body>
+</html>
